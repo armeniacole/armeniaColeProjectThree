@@ -4,43 +4,43 @@ const randomKiwi = {};
 randomKiwi.dataBase = [
     {
         word: `Togs`,
-        definition: `You wear them swimming! Togs is the collective term for all forms of swim-wear (board shorts, bikinis, one-piece, speedos ect).`
+        definition: `<h3>You wear them swimming!</h3><p>Togs is the collective term for all forms of swim-wear (board shorts, bikinis, one-piece, speedos ect).</p>`
     },
     {
         word: `Jandals`,
-        definition: `Flip-flops! the origin of this word is "Japanese Sandals`
+        definition: `<h3>Flip-flops!</h3><p>The origin of this word is "Japanese Sandals"</p>`
     },
     {
         word: `Dairy`,
-        definition: `Convenience Store! Usually a local corner store, will sell essentials and treats.`
+        definition: `<h3>Convenience Store!</h3><p>Usually a local corner store, will sell essentials and treats.</p>`
     },
     {
         word: `Wop Wops`,
-        definition: `The middle of no-where! The wop wops is far away from or not surrounded by human activity. Could mean both rural or wild areas`
+        definition: `<h3>The middle of no-where!</h3><p>The wop wops is far away from or not surrounded by human activity. Could mean both rural or wild areas</p>`
     },
     {
         word: `Kiwi`,
-        definition: `NOT THE FRUIT! 1) A Kiwi refers to the flightless bird that is the national symbol of New Zealand. 2) Someone from New Zealand is also known as a Kiwi. For the fruit please see 'Kiwi-fruit'.`
+        definition: `<h3>NOT THE FRUIT!</h3><p>1) A Kiwi refers to the flightless bird that is the national symbol of New Zealand.</p><p>2) Someone from New Zealand is also known as a Kiwi. For the fruit please see 'Kiwi-fruit'.</p>`
     },
     {
         word: `Bach`,
-        definition: `A little house for vacations. Similar to a Canadian "Cottage", a Bach is a small property usually near the beach to enjoy in summer.`
+        definition: `<h3>A little house for vacations!</h3><p>Similar to a Canadian "Cottage", a Bach is a small property usually near the beach to enjoy in summer.</p>`
     },
     {
         word: `Tramping`,
-        definition: `Hiking! Going tramping is a popular activity in New Zealand.`
+        definition: `<h3>Hiking!</h3><p>Going tramping is a popular activity in New Zealand.</p>`
     },
     {
         word: `Yarn`,
-        definition: `Telling a story! Chatting with someone, specifically the act of telling a story would be considered "Having a yarn".`
+        definition: `<h3>Telling a story!</h3><p>Chatting with someone, specifically the act of telling a story would be considered "Having a yarn".</p>`
     },
     {
-        word: `Cuz/ Cuzzie`,
-        definition: `Cuz or Cuzzie is short for Cousin but can mean anyone close to you that is like family.`
+        word: `Cuz / Cuzzie`,
+        definition: `<h3>Cousin</h3><p>Cuz or Cuzzie is short for Cousin but can mean anyone close to you that is like family.</p>`
     },
     {
         word: `Munted`,
-        definition: `Broken! if something is "Munted" it could also be described as broken, ruined, damaged, or f**ked up.`
+        definition: `<h3>Broken!</h3><p>If something is "Munted" it could also be described as broken, ruined, damaged, or fucked up.</p>`
     }
 ]
 

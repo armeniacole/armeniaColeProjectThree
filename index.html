@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Random Kiwi Word Generator</title>
     <link rel="stylesheet" href="styles/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Sigmar+One&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
@@ -16,11 +17,15 @@
     </header>
 
     <form action="">
-        <label for="button">Click the Button to get a word!</label>
-        <input type="submit" value="Get Kiwi!" id="button">
+
+        <div class="button">
+            <label class="visuallyHidden" for="button">Click the Button to get a word!</label>
+            <input type="submit" value="Get Kiwi!" id="button">
+        </div>
+        
     </form>
 
-    <section class="results">
+    <section class="results wrapper">
 
     </section>
 
