@@ -259,6 +259,10 @@ form {
   padding: 20px 0px 50px;
 }
 
+.results {
+  height: 100vh;
+}
+
 .button {
   width: 40%;
   margin: 0 auto;

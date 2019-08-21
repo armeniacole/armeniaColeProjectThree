@@ -10,9 +10,11 @@ main {
 
 form {
     background: $background;
-    padding: 20px 0px 50px;
-   
-    
+    padding: 20px 0px 50px;   
+}
+
+.results {
+    height: 100vh;
 }
 
 .button {

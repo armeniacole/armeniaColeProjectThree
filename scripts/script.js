@@ -70,25 +70,29 @@ randomKiwi.buttonClick = function(){
 
 randomKiwi.smoothScroll = function () {
     $('form').on('submit', function (event) {
-        const answerPage = $(this).data('hash');
+        const answerPage = $('input').data('hash');
 
-        // if (answerPage !== '') {
-        //     event.preventDefault();
+        if (answerPage !== '') {
+            event.preventDefault();
 
-        //     $('html, body').animate({
-        //         scrollTop: $(answerPage).offset().top
-        //     }, 800, function () {
-        //             window.location.hash = answerPage;
-        //     });
-        // }
-        console.log(answerPage);
+            console.log(answerPage);
+
+            $('html, body').animate({
+                scrollTop: $(answerPage).offset().top
+            }, 800, function () {
+                    window.location.hash = answerPage;
+            });
+        }
+        // console.log(answerPage);
     });
 }
 
 
 $(function(){
     // randomKiwi.buttonClick();
-    // const answerPage = $('input').data('hash');
+
+    // const answerPage = $().data('hash');
     // console.log(answerPage);
+
     randomKiwi.smoothScroll();
 });
