@@ -66,33 +66,34 @@ randomKiwi.buttonClick = function(){
     });    
 }
 
-// const answerPage = $(this).data('hash');
-
+// smooth scroll to results when button clicked
 randomKiwi.smoothScroll = function () {
     $('form').on('submit', function (event) {
-        const answerPage = $('input').data('hash');
-
-        if (answerPage !== '') {
+        // store content of data hash (which refers to the new location)
+        const resultsPage = $('input').data('hash');
+        
+        // if there is something in the hash prevent default behavior and then
+        if (resultsPage !== '') {
             event.preventDefault();
-
-            console.log(answerPage);
-
+        //  and then animate the change in locations to the new location
             $('html, body').animate({
-                scrollTop: $(answerPage).offset().top
+                scrollTop: $(resultsPage).offset().top
             }, 800, function () {
-                    window.location.hash = answerPage;
+                    window.location.hash = "resultsPage";
             });
-        }
-        // console.log(answerPage);
+        } 
+        
     });
 }
 
+// fix for page refresh to move to top
+randomKiwi.resetHash = function () {
+    window.location.hash = "";
+}
 
 $(function(){
-    // randomKiwi.buttonClick();
-
-    // const answerPage = $().data('hash');
-    // console.log(answerPage);
-
+    // $(window).scrollTop(0);
+    randomKiwi.resetHash();
     randomKiwi.smoothScroll();
+    randomKiwi.buttonClick();
 });
