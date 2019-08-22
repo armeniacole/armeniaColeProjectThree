@@ -2,16 +2,19 @@ html {
     background: $darkGreen;
 }
 
-header {
+main {
     background: $background;
-    padding: 50px 0px 20px;
+    // padding: 50px 0px 20px;
+    height: 100vh;
 }
 
 form {
     background: $background;
-    padding: 20px 0px 50px;
-   
-    
+    padding: 20px 0px 50px;   
+}
+
+.results {
+    height: 100vh;
 }
 
 .button {

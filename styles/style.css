@@ -249,14 +249,18 @@ html {
   background: #53a548;
 }
 
-header {
+main {
   background: #007ba0;
-  padding: 50px 0px 20px;
+  height: 100vh;
 }
 
 form {
   background: #007ba0;
   padding: 20px 0px 50px;
+}
+
+.results {
+  height: 100vh;
 }
 
 .button {
