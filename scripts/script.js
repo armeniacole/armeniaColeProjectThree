@@ -75,7 +75,7 @@ randomKiwi.smoothScroll = function () {
         // if there is something in the hash prevent default behavior and then
         if (resultsPage !== '') {
             event.preventDefault();
-        //  and then animate the change in locations to the new location
+            //  and then animate the change in locations to the new location
             $('html, body').animate({
                 scrollTop: $(resultsPage).offset().top
             }, 800, function () {
