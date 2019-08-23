@@ -184,7 +184,6 @@ html {
 }
 
 h1 {
-
   font-size: 7.5rem;
   font-family: 'Vollkorn', serif;
   color: white;
@@ -217,7 +216,6 @@ h2 {
 }
 
 h3 {
-
   font-family: 'Vollkorn', serif;
   font-weight: 700;
   text-align: center;
@@ -278,7 +276,6 @@ h1 {
 }
 
 form {
-  background: #007ba0;
   padding: 20px 0px 50px;
 }
 
@@ -302,7 +299,12 @@ form {
   background: #53a548;
 }
 
-section {
+.blue {
+  height: 100vh;
+  background: #007ba0;
+}
+
+.green {
   height: 100vh;
 }
 
@@ -334,7 +336,7 @@ input[type=submit]:focus {
           box-shadow: 10px 10px 0 #91cb3e;
 }
 
-.bottomButton input[type=submit] {
+.quizButton input[type=submit] {
   background: #007ba0;
   -webkit-box-shadow: 10px 10px 0 #17bebb;
           box-shadow: 10px 10px 0 #17bebb;

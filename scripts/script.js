@@ -83,7 +83,7 @@ randomKiwi.buttonClick = function(){
         $('.quiz').html(`<fieldset>${userClick.q1} ${userClick.q2} ${userClick.q3}</fieldset>
         <div class="quizButton">
                 <label class="visuallyHidden" for="quizButton">Click the Button to get a word!</label>
-                <input type="submit" value="Get Kiwi!" id="quizButton" data-hash="#final">
+                <input type="submit" value="Submit!" id="quizButton" data-hash="#final">
         </div>`);
     });    
 }
