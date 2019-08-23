@@ -5,21 +5,24 @@ randomKiwi.dataBase = [
     {
         word: `Togs`,
         definition: `<h3>You wear them swimming!</h3><p>Togs is the collective term for all forms of swim-wear (board shorts, bikinis, one-piece, speedos ect).</p>`,
-        q1: `<input type="radio" name="quest" id="swim" value="true"><label for="swimsuit"> clothes for swimming</label>`,
-        q2: `<input type="radio" name="quest" id="shoes" value="false"><label for="shoes"> a special type of shoe</label>`,
-        q3: `<input type="radio" name="quest" id="food" value="false"><label for="food"> a local shellfish</label>`
+        q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1"> clothes for swimming</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2"> a special type of shoe</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3"> a local shellfish</label>`
         
     },
     {
         word: `Jandals`,
         definition: `<h3>Flip-flops!</h3><p>The origin of this word is "Japanese Sandals"</p>`,
-        q1: `<input type="radio" name="quest" id="greeting" value="false"><label for="greeting"> "Goodbye!"</label>`,
-        q2: `<input type="radio" name="quest" id="shoes" value="true"><label for="shoes"> flip-flops</label>`,
-        q3: `<input type="radio" name="quest" id="candy" value="false"><label for="candy"> a type of candy</label>`
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1"> "Goodbye!"</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="true"><label for="q2"> flip-flops</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3"> a type of candy</label>`
     },
     {
         word: `Dairy`,
-        definition: `<h3>Convenience Store!</h3><p>Usually a local corner store, will sell essentials and treats.</p>`
+        definition: `<h3>Convenience Store!</h3><p>Usually a local corner store, will sell essentials and treats.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1"> group of cows</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2"> an ice-cream</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="true"><label for="q3"> Convenience Store</label>`
     },
     {
         word: `Wop Wops`,
@@ -31,7 +34,10 @@ randomKiwi.dataBase = [
     },
     {
         word: `Bach`,
-        definition: `<h3>A little house for vacations!</h3><p>Similar to a Canadian "Cottage", a Bach is a small property usually near the beach to enjoy in summer.</p>`
+        definition: `<h3>A little house for vacations!</h3><p>Similar to a Canadian "Cottage", a Bach is a small property usually near the beach to enjoy in summer.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1"> Bachelor Party</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="true"><label for="q2"> Small vacation home.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3"> someone who is obsessed with music.</label>`
     },
     {
         word: `Tramping`,
