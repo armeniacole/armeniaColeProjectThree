@@ -211,7 +211,7 @@ h2 {
   font-weight: 700;
   text-align: center;
   color: white;
-  font-size: 2.2rem;
+  font-size: 5rem;
   margin: 10px;
 }
 
@@ -264,48 +264,8 @@ html {
   background: #53a548;
 }
 
-main {
-  background: #007ba0;
-  height: 100vh;
-}
-
-h1 {
-  padding-top: 150px;
-  width: 100%;
-  line-height: 5rem;
-}
-
 form {
   padding: 20px 0px 50px;
-}
-
-.kiwis {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  bottom: 40px;
-}
-
-.kiwis img {
-  width: 45%;
-  border-bottom: #91cb3e;
-}
-
-.bottomButton {
-  background: #53a548;
-}
-
-.blue {
-  height: 100vh;
-  background: #007ba0;
-}
-
-.green {
-  height: 100vh;
 }
 
 .button {
@@ -330,10 +290,25 @@ input[type=submit]:focus {
   border: 5px solid white;
 }
 
+main {
+  background: #007ba0;
+  height: 100vh;
+}
+
+h1 {
+  padding-top: 150px;
+  width: 100%;
+  line-height: 5rem;
+}
+
 .mainButton input[type=submit] {
   background: #53a548;
   -webkit-box-shadow: 10px 10px 0 #91cb3e;
           box-shadow: 10px 10px 0 #91cb3e;
+}
+
+.green {
+  height: 100vh;
 }
 
 .quizButton input[type=submit] {
@@ -350,6 +325,7 @@ input[type=radio] {
   display: block;
 }
 
-.final {
+.blue {
+  height: 100vh;
   background: #007ba0;
 }

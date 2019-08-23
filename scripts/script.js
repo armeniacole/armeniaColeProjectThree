@@ -81,15 +81,15 @@ randomKiwi.buttonClick = function(){
         // display matching word and definition to user by adding to html
         $('.results').html(`<h2>${userClick.word}</h2><p>What do you think ${userClick.word} means?</p>`);
         $('.quiz').html(`<fieldset>${userClick.q1} ${userClick.q2} ${userClick.q3}</fieldset>
-        <div class="quizButton">
+        <div class="quizButton button">
                 <label class="visuallyHidden" for="quizButton">Click the Button to get a word!</label>
-                <input type="submit" value="Submit!" id="quizButton" data-hash="#final">
+                <input type="submit" class="submit" value="Submit!" id="quizButton" data-hash="#final">
         </div>`);
     });    
 }
 
 
-// smooth scroll to results when button clicked
+// smooth scroll for button that exits in HTML
 randomKiwi.smoothScroll = function () {
     $('.mainButton').on('submit', function (event) {
         // store content of data hash (which refers to the new location)
@@ -109,6 +109,26 @@ randomKiwi.smoothScroll = function () {
     });
 }
 
+//Smooth Scroll for dynamically generated buttons
+randomKiwi.scrollOther = function () {
+    $('.quiz').on('submit', 'input', function (event) {
+        // store content of data hash (which refers to the new location)
+        const resultsPage = $('.quiz.submit').data('hash');
+        console.log(resultsPage);
+        // if there is something in the hash prevent default behavior and then
+        if (resultsPage !== '') {
+            event.preventDefault();
+            //  and then animate the change in locations to the new location
+            $('html, body').animate({
+                scrollTop: $(resultsPage).offset().top
+            }, 800, function () {
+                window.location.hash = "resultsPage";
+            });
+        }
+
+    });
+}
+
 // fix for page refresh to move to top
 randomKiwi.resetHash = function () {
     window.location.hash = "";
@@ -118,15 +138,25 @@ randomKiwi.resetHash = function () {
 randomKiwi.quizClick = function(){
     $('.quiz').on("submit", function(event){
         event.preventDefault();
-        console.log("is this working");
+        // console.log("is this working");
 
         const userAnswer = $('input[name=quest]:checked').val();
-        console.log(userAnswer);
+        // console.log(userAnswer);
 
         if (userAnswer === 'true') {
-            $('.final').html(`<p>You were right, heres the definition:</p><p>${userClick.definition}</p>`)
+            $('.final').html(`<p>You were right, heres the definition:</p><p>${userClick.definition}</p>
+            <div class="topButton button">
+                <label class="visuallyHidden" for="quizButton">Click the Button to get a word!</label>
+                <input type="submit" class="submit" value="Back to Top!" id="quizButton" data-hash="#top">
+            </div>`)
+        } else if (userAnswer === 'false'){
+            $('.final').html(`<p>Sorry thats wrong, heres the definition:</p><p>${userClick.definition}</p>
+            <div class="topButton button">
+                <label class="visuallyHidden" for="quizButton">Click the Button to get a word!</label>
+                <input type="submit" class="submit" value="Get Another Kiwi!" id="quizButton" data-hash="#top">
+            </div>`)
         } else {
-            $('.final').html(`<p>Sorry thats wrong, heres the definition:</p><p>${userClick.definition}</p>`)
+            $('.final').html(`<p>Please scroll up and choose an answer.</p>`)
         }
 
 
@@ -138,6 +168,7 @@ $(function(){
     // $(window).scrollTop(0);
     randomKiwi.resetHash();
     randomKiwi.smoothScroll();
+    randomKiwi.scrollOther();
     randomKiwi.buttonClick();
     randomKiwi.quizClick();
 });

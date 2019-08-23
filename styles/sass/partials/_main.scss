@@ -1,52 +1,17 @@
+// General
+
 html {
     background: $darkGreen;
-}
-
-main {
-    background: $background;
-    // padding: 50px 0px 20px;
-    height: 100vh;
-}
-
-h1 {
-    padding-top: 150px;
-    width: 100%;
-    line-height: 5rem;
 }
 
 form {
     padding: 20px 0px 50px;   
 }
 
-.kiwis {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    bottom: 40px;
-}
-.kiwis img {
-    width: 45%;
-    border-bottom: $lightGreen;
-}
-
-.bottomButton {
-    background: $darkGreen;
-}
-
-.blue {
-    height: 100vh;
-    background: $background;
-}
-.green {
-    height: 100vh;
-    
-}
-
 .button {
     width: 60%;
     margin: 0 auto;
 }
-
 
 input[type=submit] {
     margin-top: 30px;
@@ -65,9 +30,40 @@ input[type=submit] {
     }
 }
 
+// Section One
+main {
+    background: $background;
+    // padding: 50px 0px 20px;
+    height: 100vh;
+}
+
+h1 {
+    padding-top: 150px;
+    width: 100%;
+    line-height: 5rem;
+}
+
+
 .mainButton input[type=submit] {
     background: $darkGreen;
     box-shadow: 10px 10px 0 $lightGreen;  
+}
+
+
+// .kiwis {
+//     display: flex;
+//     justify-content: space-between;
+//     position: relative;
+//     bottom: 40px;
+// }
+// .kiwis img {
+//     width: 45%;
+//     border-bottom: $lightGreen;
+// }
+
+// Section two
+.green {
+    height: 100vh; 
 }
 
 .quizButton input[type=submit] {
@@ -83,6 +79,8 @@ input[type=radio] {
     display: block;
 }
 
-.final {
+// Section three
+.blue {
+    height: 100vh;
     background: $background;
 }
