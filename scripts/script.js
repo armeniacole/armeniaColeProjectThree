@@ -80,8 +80,8 @@ randomKiwi.buttonClick = function(){
 
         
         // display matching word and definition to user by adding to html
-        $('.results').html(`<h2>${userClick.word}</h2><p>What do you think ${userClick.word} means?</p>`);
-        $('.quiz').html(`<fieldset>${userClick.q1} ${userClick.q2} ${userClick.q3}</fieldset>
+        $('.results').html(`<h2>${userClick.word}</h2>`);
+        $('.quiz').html(`<fieldset><legend>What do you think ${userClick.word} means?</legend>${userClick.q1} ${userClick.q2} ${userClick.q3}</fieldset>
         <div class="quizButton button">
                 <label class="visuallyHidden" for="quizButton">Click the Button to get a word!</label>
                 <input type="submit" class="submit" value="Submit!" id="quizButton" data-hash="#final">
@@ -140,7 +140,12 @@ randomKiwi.quizClick = function(){
             </div>`)
             randomKiwi.smoothScroll('.final');
         } else {
-            $('.final').html(`<p>Please scroll up and choose an answer.</p>`)
+            $('.final').html(`<p>Please choose an answer.</p>
+            <div class="topButton button">
+                <label class="visuallyHidden" for="quizButton">Click the Button to get a word!</label>
+                <input type="submit" class="submit" value="Back to Quiz" id="quizButton" data-hash="#results">
+            </div>`)
+            randomKiwi.smoothScroll('.final');
         }
     });
 

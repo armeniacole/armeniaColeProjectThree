@@ -34,6 +34,7 @@ h2 {
     color: white;
     font-size: 5rem;
     margin: 10px;
+    line-height: 4rem;
 }
 
 h3 {
@@ -55,4 +56,12 @@ p {
 input[type=submit] {
     font-family: 'Vollkorn', serif;
     font-size: 2.5rem;
+}
+
+legend {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.7rem;
 }

@@ -14,7 +14,7 @@ form {
 }
 
 input[type=submit] {
-    margin-top: 30px;
+    margin-top: 10px;
     border: none;
     color: white;
     padding: 10px;
@@ -44,7 +44,8 @@ h1 {
 }
 
 
-.mainButton input[type=submit] {
+.mainButton input[type=submit],
+.final input[type=submit] {
     background: $darkGreen;
     box-shadow: 10px 10px 0 $lightGreen;  
 }
@@ -76,16 +77,47 @@ h2 {
 }
 
 fieldset {
-    width: 50%;
+    width: 70%;
+    margin: 0 auto;
+    border: none;
+    padding: 20px;
+}
+
+legend {
     margin: 0 auto;
 }
 
-input[type=radio] {
-    display: block;
+form input[type='radio'] {
+    display: none;
 }
+
+input[type='radio']+label {
+    color: #fff;
+    font-size: 1.5rem;
+    display: block;
+    padding: 10px 0;
+}
+
+form input[type='radio']+label::before {
+    content: '';
+    display: inline-block;
+    border: 5px solid #fff;
+    margin: 0 0.5em;
+    width: 1rem;
+    height: 1rem;
+    box-shadow: 4px 4px #007ba0;
+}
+
+form input[type='radio']:checked+label::before {
+    background-color: #17bebb;
+}
+
 
 // Section three
 .blue {
     height: 100vh;
     background: $background;
+}
+.final {
+    padding-top: 150px;
 }
