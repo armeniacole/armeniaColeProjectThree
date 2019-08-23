@@ -66,13 +66,18 @@ h1 {
     height: 100vh; 
 }
 
+h2 {
+    padding-top: 100px;
+}
+
 .quizButton input[type=submit] {
     background: $background;
     box-shadow: 10px 10px 0 $blue;   
 }
 
-.quiz {
-    width: 40%;
+fieldset {
+    width: 50%;
+    margin: 0 auto;
 }
 
 input[type=radio] {
