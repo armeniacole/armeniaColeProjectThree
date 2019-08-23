@@ -8,24 +8,80 @@ main {
     height: 100vh;
 }
 
+h1 {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 100px;
+    margin-bottom: 5px;
+    // border-bottom: 5px solid $lightGreen;
+}
 form {
     background: $background;
     padding: 20px 0px 50px;   
 }
 
-.results {
-    height: 100vh;
+.kiwis {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 40px;
 }
+.kiwis img {
+    width: 45%;
+    border-bottom: $lightGreen;
+}
+
+.bottomButton {
+    background: $darkGreen;
+}
+
+
+
+section {
+    height: 100vh
+}
+// .results {
+//     height: 100vh;
+    
+// }
 
 .button {
     width: 40%;
     margin: 0 auto;
 }
 
+
 input[type=submit] {
     border: none;
-    background: $darkGreen;
     color: white;
     padding: 10px;
     width: 100%;
+    border: 5px solid transparent;
+
+    &:hover {
+        border: 5px solid white;
+    }
+
+    &:focus {
+        border: 5px solid white;
+    }
+}
+
+.mainButton input[type=submit] {
+    background: $darkGreen;
+    box-shadow: 10px 10px 0 $lightGreen;  
+}
+
+.bottomButton input[type=submit] {
+    background: $background;
+    box-shadow: 10px 10px 0 $blue;
+    
+}
+
+.quiz {
+    width: 40%;
+}
+
+input[type=radio] {
+    display: block;
 }
