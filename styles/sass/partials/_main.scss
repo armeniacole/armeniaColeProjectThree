@@ -19,9 +19,30 @@ form {
     padding: 20px 0px 50px;   
 }
 
-.results {
-    height: 100vh;
+.kiwis {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 40px;
 }
+.kiwis img {
+    width: 45%;
+    border-bottom: $lightGreen;
+}
+
+.bottomButton {
+    background: $darkGreen;
+}
+
+
+
+section {
+    height: 100vh
+}
+// .results {
+//     height: 100vh;
+    
+// }
 
 .button {
     width: 60%;
@@ -49,4 +70,21 @@ input[type=submit] {
 .mainButton input[type=submit] {
     background: $darkGreen;
     box-shadow: 10px 10px 0 $lightGreen;  
+}
+
+.bottomButton input[type=submit] {
+    background: $background;
+    box-shadow: 10px 10px 0 $blue;   
+}
+
+.quiz {
+    width: 40%;
+}
+
+input[type=radio] {
+    display: block;
+}
+
+.final {
+    background: $background;
 }

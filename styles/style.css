@@ -184,6 +184,7 @@ html {
 }
 
 h1 {
+
   font-size: 7.5rem;
   font-family: 'Vollkorn', serif;
   color: white;
@@ -216,6 +217,7 @@ h2 {
 }
 
 h3 {
+
   font-family: 'Vollkorn', serif;
   font-weight: 700;
   text-align: center;
@@ -280,7 +282,27 @@ form {
   padding: 20px 0px 50px;
 }
 
-.results {
+.kiwis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  bottom: 40px;
+}
+
+.kiwis img {
+  width: 45%;
+  border-bottom: #91cb3e;
+}
+
+.bottomButton {
+  background: #53a548;
+}
+
+section {
   height: 100vh;
 }
 
@@ -310,4 +332,22 @@ input[type=submit]:focus {
   background: #53a548;
   -webkit-box-shadow: 10px 10px 0 #91cb3e;
           box-shadow: 10px 10px 0 #91cb3e;
+}
+
+.bottomButton input[type=submit] {
+  background: #007ba0;
+  -webkit-box-shadow: 10px 10px 0 #17bebb;
+          box-shadow: 10px 10px 0 #17bebb;
+}
+
+.quiz {
+  width: 40%;
+}
+
+input[type=radio] {
+  display: block;
+}
+
+.final {
+  background: #007ba0;
 }
