@@ -2,26 +2,35 @@ html {
     font-size: 125%;
 }
 
+html {
+  font-size: calc(2vw + 10px);
+//   padding: 1em;
+  line-height: 1.5;
+}
+
 h1 {
-    font-size: 7.5rem;
+    // font-size: calc( 7.5rem + (7.5rem - 4rem) * ( (100vw - 400px) / ( 800 - 400) ));
+    font-size: 4.2rem;
+    line-height: 3.6rem;
     font-family: 'Vollkorn', serif;
     color: white;
     margin: 0;
-    text-align: center;
+    text-align: left;
 }
 
 .noun {
     font-family: 'Vollkorn', serif;
     font-style: italic;
+    margin: 10px 0;
 }
 
 .def {
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 1.5rem;
     text-align: left;
 }
 
 .one {
-    font-size: 2rem;
     padding: 30px;
 
 }
@@ -32,9 +41,9 @@ h2 {
     font-weight: 700;
     text-align: center;
     color: white;
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 10px;
-    line-height: 4rem;
+    line-height: 2.5rem;
 }
 
 h3 {
@@ -42,7 +51,8 @@ h3 {
     font-weight: 700;
     text-align: center;
     color: white;
-    font-size: 2.3rem;
+    font-size: 2rem;
+    padding: 20px 0;
     margin: 0;
 }
 p {
@@ -50,12 +60,12 @@ p {
     color: white;
     text-align: center;
     margin: 10px;
-    font-size: 1.3rem;
+    // font-size: 1.3rem;
 }
 
 input[type=submit] {
     font-family: 'Vollkorn', serif;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 legend {
@@ -63,5 +73,62 @@ legend {
     color: white;
     text-align: center;
     margin: 10px;
-    font-size: 1.7rem;
+    // font-size: 1.7rem;
+}
+
+.RW {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+// @media (max-width: 1200px) {
+//     h1 {
+//         font-size: 7rem;
+//     }
+// }
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 3.3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2.9rem;
+    }
+    .one {
+        font-size: 1.5rem;
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
 }
