@@ -161,9 +161,11 @@ form input[type='radio']:checked+label::before {
 }
 
 @media (max-height: 590px) {
-    h1 {
-        padding-top: 75px;
+    
+   h2 {
+        line-height: 1.5rem;
     }
+    
 }
 
 @media (max-height: 500px) {
