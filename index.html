@@ -6,28 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Random Kiwi Word Generator</title>
     <link rel="stylesheet" href="styles/style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Sigmar+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Vollkorn:700,700i&display=swap" rel="stylesheet">    
 </head>
 <body>
 
-    <header>
-        <h1>Random Kiwi</h1>
-        <p>New Zealand has three official languages; English, Maori and NZ Sign Language.</p>
-        <p>Like many countries NZ has lots of fun everyday slang words.</p>
-    </header>
+    <main>
+        <header class="wrapper" id="top">
+            <div class="text">
+                <h1>randomKiwi</h1>
+                <p class="def">[<span class="noun">noun</span>]</p>
+            </div>
+            <p class="one">1. A button you click to get Kiwi slang.</p>
+        </header>
+    
+        <form class="mainButton wrapper" action="">
+    
+            <div class="button">
+                <label class="visuallyHidden" for="button">Click the Button to get a word!</label>
+                <input type="submit" class="submit" value="Get Kiwi!" id="button"   data-hash="#results">
+            </div>
+    
+        </form>
 
-    <form action="">
+    </main>
 
-        <div class="button">
-            <label class="visuallyHidden" for="button">Click the Button to get a word!</label>
-            <input type="submit" value="Get Kiwi!" id="button">
+    <section class="green">
+        <!-- <h2>lets test some shit</h2> -->
+        <div class="results wrapper" id="results">
+   
         </div>
         
-    </form>
+        <form action="" class="quiz wrapper">
 
-    <section class="results wrapper">
+        </form>
 
     </section>
+    <section class="blue" >
+        <form action='' class="final wrapper" id="final">
+
+        </form>
+    </section>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="scripts/script.js"></script> 
