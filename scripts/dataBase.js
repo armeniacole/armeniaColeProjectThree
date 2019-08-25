@@ -1,5 +1,6 @@
-export const randomKiwi={
-    dataBase : [
+// array of objects with words and definitions as keys.
+randomKiwi.dataBase = [
+
     {
         word: `Togs`,
         definition: `<h3>You wear them swimming!</h3><p>Togs is the collective term for all forms of swim-wear (board shorts, bikinis, one-piece, speedos ect).</p>`,
@@ -88,7 +89,6 @@ export const randomKiwi={
         q2: `<input type="radio" name="quest" id="q2" value="True"><label for="q2">Very short shorts.</label>`,
         q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Toes.</label>`
     },
-<<<<<<< Updated upstream
     {
         word: `Slash`,
         definition: `<h3>To go pee!</h3><p>Slang word used to excuse yourself to the bathroom in a party setting. "I'm going to take a slash".</p>`,
@@ -96,53 +96,44 @@ export const randomKiwi={
         q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">To cut school.</label>`,
         q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">To take a nap.</label>`
     },
-        {
-            word: `Squizz`,
-            definition: `<h3>Have a look!</h3><p>Commonly used in sentences like "I went to take a squizz." and "Give me a squizz.".</p>`,
-            q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">Go to the bathroom.</label>`,
-            q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">To grab a snack.</label>`,
-            q3: `<input type="radio" name="quest" id="q3" value="true"><label for="q3">To look at.</label>`
-        },
-        {
-            word: `Ute`,
-            definition: `<h3>Pick up truck!</h3><p>Trucks typically used for farming or off-roading.</p>`,
-            q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1">Pick up truck.</label>`,
-            q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">A large shovel.</label>`,
-            q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">The "youths".</label>`
-        },
-        {
-            word: `Boot`,
-            definition: `<h3>Car Trunk!</h3><p>The storage section in a car.</p>`,
-            q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">A pint of beer.</label>`,
-            q2: `<input type="radio" name="quest" id="q2" value="true"><label for="q2">Back of a vehicle.</label>`,
-            q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Kicked out.</label>`
-        },
-        {
-            word: `Chilly-bin`,
-            definition: `<h3>Cooler!</h3><p>A box used to keep food and drink cool.</p>`,
-            q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">A deep freezer.</label>`,
-            q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">A box of beers.</label>`,
-            q3: `<input type="radio" name="quest" id="q3" value="true"><label for="q3">A cold storage box.</label>`
-        },
-        {
-            word: `Tiki-tour`,
-            definition: `<h3>one liner!</h3><p>definition.</p>`,
-            q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">one.</label>`,
-            q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">two.</label>`,
-            q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">three.</label>`
-        },
+    {
+        word: `Squizz`,
+        definition: `<h3>Have a look!</h3><p>Commonly used in sentences like "I went to take a squizz." and "Give me a squizz.".</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">Go to the bathroom.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">To grab a snack.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="true"><label for="q3">To look at.</label>`
+    },
+    {
+        word: `Ute`,
+        definition: `<h3>Pick up truck!</h3><p>Trucks typically used for farming or off-roading.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1">Pick up truck.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">A large shovel.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">The "youths".</label>`
+    },
+    {
+        word: `Boot`,
+        definition: `<h3>Car Trunk!</h3><p>The storage section in a car.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">A pint of beer.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="true"><label for="q2">Back of a vehicle.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Kicked out.</label>`
+    },
+    {
+        word: `Chilly-bin`,
+        definition: `<h3>Cooler!</h3><p>A box used to keep food and drink cool.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">A deep freezer.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">A box of beers.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="true"><label for="q3">A cold storage box.</label>`
+    },
+    {
+        word: `Tiki-tour`,
+        definition: `<h3>one liner!</h3><p>definition.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">one.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">two.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">three.</label>`
+    },
 
 ]
 
-=======
-],
-}
-
-
-
-// export default randomKiwi
-
->>>>>>> Stashed changes
 // {
 //     word: `Word`,
 //     definition: `<h3>one liner!</h3><p>definition.</p>`,
