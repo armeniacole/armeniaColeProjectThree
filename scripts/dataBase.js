@@ -125,11 +125,32 @@ randomKiwi.dataBase = [
         q3: `<input type="radio" name="quest" id="q3" value="true"><label for="q3">A cold storage box.</label>`
     },
     {
-        word: `Tiki-tour`,
-        definition: `<h3>one liner!</h3><p>definition.</p>`,
-        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">one.</label>`,
-        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">two.</label>`,
-        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">three.</label>`
+        word: `Tiki-Tour`,
+        definition: `<h3>The Scenic Route!</h3><p>Tiki-Tour refers to taking the long way or the scenic route, or to drive around with no set schedule and/or destination.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">A pub crawl.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="true"><label for="q2">The scenic route.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Hiking Boots.</label>`
+    },
+    {
+        word: `GC`,
+        definition: `<h3>Good Cunt!</h3><p>This is a compliment. A GC is often used to describe someone who is reliable or generous.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1">A positive description of someone.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">A good decision.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">An idiot.</label>`
+    },
+    {
+        word: `Scab`,
+        definition: `<h3>a Moocher!</h3><p>Mostly used on the school yard to describe the person or act of taking someones food.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">Someone who doesn't belong.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="true"><label for="q2">A moocher.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">A non-union worker.</label>`
+    }, 
+    {
+        word: `Durrie`,
+        definition: `<h3>A cigarette!</h3><p>Slang for a single cigarette "You got a durrie?".</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">A trailer.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">A cigarette.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">A type of stew.</label>`
     },
 
 ]

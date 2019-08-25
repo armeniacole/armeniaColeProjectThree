@@ -399,7 +399,7 @@ h2 {
 }
 
 fieldset {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
   border: none;
   padding: 20px;
@@ -472,6 +472,12 @@ form input[type='radio']:checked + label::before {
 @media (max-height: 625px) {
   h1 {
     padding-top: 100px;
+  }
+}
+
+@media (max-height: 590px) {
+  h1 {
+    padding-top: 75px;
   }
 }
 
