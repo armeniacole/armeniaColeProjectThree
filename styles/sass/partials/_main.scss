@@ -4,9 +4,9 @@ html {
     background: $darkGreen;
 }
 
-form {
-    padding: 20px 0px 50px;   
-}
+// form {
+//     padding: 20px 0px 50px;   
+// }
 
 .button {
     width: 60%;
@@ -15,6 +15,7 @@ form {
 
 input[type=submit] {
     margin-top: 10px;
+    border-radius: 5px;
     border: none;
     color: white;
     padding: 10px;
@@ -40,7 +41,6 @@ main {
 h1 {
     padding-top: 150px;
     width: 100%;
-    line-height: 5rem;
 }
 
 
@@ -50,6 +50,10 @@ h1 {
     box-shadow: 10px 10px 0 $lightGreen;  
 }
 
+.text {
+    margin: 0 auto;
+    width: 90%;
+}
 
 // .kiwis {
 //     display: flex;
@@ -93,7 +97,7 @@ form input[type='radio'] {
 
 input[type='radio']+label {
     color: #fff;
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
     display: block;
     padding: 10px 0;
 }
@@ -105,6 +109,7 @@ form input[type='radio']+label::before {
     margin: 0 0.5em;
     width: 1rem;
     height: 1rem;
+    border-radius: 5px;
     box-shadow: 4px 4px #007ba0;
 }
 
@@ -120,4 +125,11 @@ form input[type='radio']:checked+label::before {
 }
 .final {
     padding-top: 150px;
+}
+
+@media (max-width: 900px) {
+    .button {
+        width: 80%;
+    }
+
 }
