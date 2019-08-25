@@ -218,6 +218,7 @@ h2 {
   font-weight: 700;
   text-align: center;
   color: white;
+  font-size: 3rem;
   margin: 10px;
   line-height: 4rem;
 }
@@ -227,6 +228,8 @@ h3 {
   font-weight: 700;
   text-align: center;
   color: white;
+  font-size: 2rem;
+  padding: 20px 0;
   margin: 0;
 }
 
@@ -239,6 +242,7 @@ p {
 
 input[type=submit] {
   font-family: 'Vollkorn', serif;
+  font-size: 1.5rem;
 }
 
 legend {
@@ -316,7 +320,7 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
   .wrapper {
     width: 90%;
   }
@@ -376,7 +380,7 @@ h1 {
 }
 
 h2 {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .quizButton input[type=submit] {
@@ -428,11 +432,19 @@ form input[type='radio']:checked + label::before {
 }
 
 .final {
-  padding-top: 150px;
+  padding-top: 75px;
+}
+
+.topButton {
+  padding-top: 20px;
 }
 
 @media (max-width: 900px) {
   .button {
     width: 80%;
+  }
+  fieldset {
+    width: 90%;
+    padding: 20px;
   }
 }

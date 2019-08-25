@@ -72,7 +72,7 @@ h1 {
 }
 
 h2 {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .quizButton input[type=submit] {
@@ -124,12 +124,20 @@ form input[type='radio']:checked+label::before {
     background: $background;
 }
 .final {
-    padding-top: 150px;
+    padding-top: 75px;
+}
+
+.topButton {
+    padding-top: 20px;
 }
 
 @media (max-width: 900px) {
     .button {
         width: 80%;
+    }
+    fieldset {
+        width: 90%;
+        padding: 20px;
     }
 
 }
