@@ -4,9 +4,9 @@ randomKiwi.dataBase = [
     {
         word: `Togs`,
         definition: `<h3>You wear them swimming!</h3><p>Togs is the collective term for all forms of swim-wear (board shorts, bikinis, one-piece, speedos ect).</p>`,
-        q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1">Clothes for swimming.</label>`,
-        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">A pair of slippers.</label>`,
-        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">A local shellfish.</label>`
+        q1: `<input type="radio" class="visibilityHidden" name="quest" id="q1" value="true"><label for="q1">Clothes for swimming.</label>`,
+        q2: `<input type="radio" class="visibilityHidden" name="quest" id="q2" value="false"><label for="q2">A pair of slippers.</label>`,
+        q3: `<input type="radio" class="visibilityHidden" name="quest" id="q3" value="false"><label for="q3">A local shellfish.</label>`
 
     },
     {
@@ -74,7 +74,6 @@ randomKiwi.dataBase = [
         q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">To be confused.</label>`,
         q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">To be drunk.</label>`
     },
-
     {
         word: `Stubbie`,
         definition: `<h3>Small bottle of beer!</h3><p>A stubbie is the nickname for a 330ml bottle of beer.</p>`,
@@ -140,7 +139,7 @@ randomKiwi.dataBase = [
     },
     {
         word: `Scab`,
-        definition: `<h3>a Moocher!</h3><p>Mostly used on the school yard to describe the person or act of taking someones food.</p>`,
+        definition: `<h3>A Moocher!</h3><p>Mostly used on the school yard to describe the person or act of taking someones food.</p>`,
         q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">Someone who doesn't belong.</label>`,
         q2: `<input type="radio" name="quest" id="q2" value="true"><label for="q2">A moocher.</label>`,
         q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">A non-union worker.</label>`

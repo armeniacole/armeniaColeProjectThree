@@ -1,12 +1,10 @@
-// General
+// General Styles
 
 html {
     background: $darkGreen;
+    font-size: calc(2vw + 10px);
+    line-height: 1.5;
 }
-
-// form {
-//     padding: 20px 0px 50px;   
-// }
 
 .button {
     width: 60%;
@@ -20,6 +18,8 @@ input[type=submit] {
     color: white;
     padding: 10px;
     width: 100%;
+    font-family: 'Vollkorn', serif;
+    font-size: 1.5rem;
     border: 5px solid transparent;
 
     &:hover {
@@ -31,28 +31,56 @@ input[type=submit] {
     }
 }
 
-// Section One
-main {
-    background: $background;
-    // padding: 50px 0px 20px;
-    height: 100vh;
-}
-
-h1 {
-    padding-top: 125px;
-    width: 100%;
-}
-
-
 .mainButton input[type=submit],
 .final input[type=submit] {
     background: $darkGreen;
     box-shadow: 10px 10px 0 $lightGreen;  
 }
 
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+// Section One - Landing Page
+main {
+    background: $background;
+    height: 100vh;
+}
+
 .text {
     margin: 0 auto;
     width: 90%;
+}
+
+h1 {
+    
+    font-size: 4.2rem;
+    line-height: 3.6rem;
+    font-family: 'Vollkorn', serif;
+    color: white;
+    margin: 0;
+    text-align: left;
+    padding-top: 125px;
+    width: 100%;
+}
+
+.noun {
+    font-family: 'Vollkorn', serif;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.def {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.one {
+    padding: 30px;
 }
 
 // Section two
@@ -61,6 +89,14 @@ h1 {
 }
 
 h2 {
+    
+    font-family: 'Vollkorn', serif;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin: 10px;
+    line-height: 2.5rem;
     padding-top: 50px;
 }
 
@@ -77,13 +113,16 @@ fieldset {
 }
 
 legend {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 10px;
     margin: 0 auto;
 }
 
 form input[type=radio] {
     position: absolute;
     left: -9999px;
-
 }
 
 input[type=radio]+label {
@@ -114,7 +153,6 @@ form input[type=radio]+label::before {
     box-shadow: 4px 4px #007ba0;
 }
 
-
 form input[type=radio]:checked+label::before {
     background-color: #17bebb;
 }
@@ -136,7 +174,38 @@ input[type=radio]+label {
     padding-top: 20px;
 }
 
+h3 {
+    font-family: 'Vollkorn', serif;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.RW {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+footer p {
+    font-size: 0.5rem;
+}
+
+// Media Queries Width
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
 @media (max-width: 900px) {
+    h1 {
+        font-size: 3.6rem;
+    }
     .button {
         width: 80%;
     }
@@ -146,6 +215,43 @@ input[type=radio]+label {
     }
 
 }
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 3.3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2.9rem;
+    }
+    .one {
+        font-size: 1.5rem;
+        padding: 30px 10px;
+    }
+    h2 {
+        padding-top: 75px;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+}
+
+// Media Queries Height
 
 @media (max-height: 625px) {
     h1 {
