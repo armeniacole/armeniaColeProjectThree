@@ -87,12 +87,19 @@ randomKiwi.dataBase = [
         q2: `<input type="radio" name="quest" id="q2" value="True"><label for="q2">Very short shorts.</label>`,
         q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Toes.</label>`
     },
+    {
+        word: `Slash`,
+        definition: `<h3>To go pee!</h3><p>Slang word used to excuse yourself to the bathroom in a party setting. "I'm going to take a slash".</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1">Going to the bathroom.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">To cut school.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">To take a nap.</label>`
+    },
 ]
 
-{
-    word: `Word`,
-    definition: `<h3>one liner!</h3><p>definition.</p>`,
-    q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">one.</label>`,
-    q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">two.</label>`,
-    q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">three.</label>`
-},
+// {
+//     word: `Word`,
+//     definition: `<h3>one liner!</h3><p>definition.</p>`,
+//     q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">one.</label>`,
+//     q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">two.</label>`,
+//     q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">three.</label>`
+// },
