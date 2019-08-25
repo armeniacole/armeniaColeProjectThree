@@ -91,18 +91,18 @@ legend {
     margin: 0 auto;
 }
 
-form input[type='radio'] {
+form input[type=radio] {
     display: none;
 }
 
-input[type='radio']+label {
+input[type=radio]+label {
     color: #fff;
     // font-size: 1.5rem;
     display: block;
     padding: 10px 0;
 }
 
-form input[type='radio']+label::before {
+form input[type=radio]+label::before {
     content: '';
     display: inline-block;
     border: 5px solid #fff;
@@ -116,6 +116,7 @@ form input[type='radio']+label::before {
 form input[type='radio']:checked+label::before {
     background-color: #17bebb;
 }
+
 
 
 // Section three
@@ -140,4 +141,43 @@ form input[type='radio']:checked+label::before {
         padding: 20px;
     }
 
+}
+
+@media (max-height: 625px) {
+    h1 {
+        padding-top: 100px;
+    }
+}
+
+@media (max-height: 500px) {
+    h1 {
+        padding-top: 50px;
+    }
+    .one {
+        padding: 15px 10px;
+    }
+
+    h2 {
+        padding-top: 10px;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    input[type=radio]+label {
+        padding: 0;
+    }
+    .final {
+        padding-top: 10px;
+    }
+
+    h3 {
+        padding: 0;
+        line-height: 2rem;
+    }
+}
+
+@media (max-height: 400px) {
+    input[type=submit] {
+        line-height: 1rem;
+    }
 }

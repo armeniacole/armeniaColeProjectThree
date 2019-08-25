@@ -143,14 +143,14 @@ randomKiwi.quizClick = function(){
         // console.log(userAnswer);
 
         if (userAnswer === 'true') {
-            $('.final').html(`<p>You were right, heres the definition:</p><p>${userClick.definition}</p>
+            $('.final').html(`<p>You were <span class="RW">right</span>, heres the definition:</p><p>${userClick.definition}</p>
             <div class="topButton button">
                 <label class="visuallyHidden" for="quizButton">Click the Button to get a word!</label>
                 <input type="submit" class="submit" value="Another Kiwi!" id="quizButton" data-hash="#top">
             </div>`)
             randomKiwi.smoothScroll('.final');
         } else if (userAnswer === 'false'){
-            $('.final').html(`<p>Sorry thats wrong, heres the definition:</p><p>${userClick.definition}</p>
+            $('.final').html(`<p>Sorry thats <span class="RW">wrong</span>, heres the definition:</p><p>${userClick.definition}</p>
             <div class="topButton button">
                 <label class="visuallyHidden" for="quizButton">Click the Button to get a word!</label>
                 <input type="submit" class="submit" value="Another Kiwi!" id="quizButton" data-hash="#top">

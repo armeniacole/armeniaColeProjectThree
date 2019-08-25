@@ -220,7 +220,7 @@ h2 {
   color: white;
   font-size: 3rem;
   margin: 10px;
-  line-height: 4rem;
+  line-height: 2.5rem;
 }
 
 h3 {
@@ -250,6 +250,11 @@ legend {
   color: white;
   text-align: center;
   margin: 10px;
+}
+
+.RW {
+  font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1200px) {
@@ -400,17 +405,17 @@ legend {
   margin: 0 auto;
 }
 
-form input[type='radio'] {
+form input[type=radio] {
   display: none;
 }
 
-input[type='radio'] + label {
+input[type=radio] + label {
   color: #fff;
   display: block;
   padding: 10px 0;
 }
 
-form input[type='radio'] + label::before {
+form input[type=radio] + label::before {
   content: '';
   display: inline-block;
   border: 5px solid #fff;
@@ -446,5 +451,41 @@ form input[type='radio']:checked + label::before {
   fieldset {
     width: 90%;
     padding: 20px;
+  }
+}
+
+@media (max-height: 625px) {
+  h1 {
+    padding-top: 100px;
+  }
+}
+
+@media (max-height: 500px) {
+  h1 {
+    padding-top: 50px;
+  }
+  .one {
+    padding: 15px 10px;
+  }
+  h2 {
+    padding-top: 10px;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  input[type=radio] + label {
+    padding: 0;
+  }
+  .final {
+    padding-top: 10px;
+  }
+  h3 {
+    padding: 0;
+    line-height: 2rem;
+  }
+}
+
+@media (max-height: 400px) {
+  input[type=submit] {
+    line-height: 1rem;
   }
 }
