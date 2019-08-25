@@ -1,6 +1,7 @@
 const randomKiwi = {};
 
 // array of objects with words and definitions as keys.
+
 randomKiwi.dataBase = [
     {
         word: `Togs`,
@@ -74,7 +75,28 @@ randomKiwi.dataBase = [
         q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1">Something that is broken.</label>`,
         q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">To be confused.</label>`,
         q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">To be drunk.</label>`
-    }
+    },
+    {
+        word: `Stubbie`,
+        definition: `<h3>Small bottle of beer!</h3><p>A stubbie is the nickname for a 330ml bottle of beer.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">A short pair of pants.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">To be short.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="true"><label for="q3">Bottle of beer.</label>`
+    },
+    {
+        word: `Stubbies`,
+        definition: `<h3>Short shorts!</h3><p>Stubbies are a pair of very short shorts originally for men. They are similar to a rugby style short and are typically of a sturdy material.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">Ticket stub collectors.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="true"><label for="q2">Very short shorts.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Toes.</label>`
+    },
+    {
+        word: `Slash`,
+        definition: `<h3>To go pee!</h3><p>Slang word used to excuse yourself to the bathroom in a party setting. "I'm going to take a slash".</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1">Going to the bathroom.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">To cut school.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">To take a nap.</label>`
+    },
 ]
 
 
