@@ -173,8 +173,8 @@ randomKiwi.dataBase = [
     },
     {
         word: `Fortnight`,
-        definition: `<h3>Every two weeks!</h3><p>Every two weeks.</p>`,
-        q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1">Every other week, if something happens regularly it would be "fortnightly".</label>`,
+        definition: `<h3>Every two weeks!</h3><p>Every other week, if something happens regularly it would be "fortnightly".</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1">Every two weeks.</label>`,
         q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">Every two months.</label>`,
         q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Every four weeks.</label>`
     },
