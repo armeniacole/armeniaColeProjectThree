@@ -1,0 +1,305 @@
+// General Styles
+
+html {
+    background: $darkGreen;
+    font-size: calc(2vw + 10px);
+    line-height: 1.5;
+}
+
+// Submit Buttons
+.button {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=submit] {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Vollkorn', serif;
+    font-size: 1.5rem;
+    border: 5px solid transparent;
+
+    &:hover {
+        border: 5px solid white;
+    }
+
+    &:focus {
+        border: 5px solid white;
+    }
+}
+
+.mainButton input[type=submit],
+.final input[type=submit] {
+    background: $darkGreen;
+    box-shadow: 10px 10px 0 $lightGreen;  
+}
+
+// Site wide Typography
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+// Landing Page text styling
+main {
+    background: $background;
+    height: 100vh;
+}
+
+.text {
+    margin: 0 auto;
+    width: 90%;
+}
+
+h1 {
+    
+    font-size: 4.2rem;
+    line-height: 3.6rem;
+    font-family: 'Vollkorn', serif;
+    color: white;
+    margin: 0;
+    text-align: left;
+    padding-top: 125px;
+    width: 100%;
+}
+
+.noun {
+    font-family: 'Vollkorn', serif;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.def {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.one {
+    padding: 30px;
+}
+
+// Quiz Section
+.green {
+    height: 100vh; 
+}
+
+h2 {
+    
+    font-family: 'Vollkorn', serif;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin: 10px;
+    line-height: 2.5rem;
+    padding-top: 50px;
+}
+
+// Form styling for quiz
+.quizButton input[type=submit] {
+    background: $background;
+    box-shadow: 10px 10px 0 $blue;   
+}
+
+fieldset {
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 0;
+}
+
+legend {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    margin: 0 auto;
+}
+
+// Radio Button Styling
+form input[type=radio] {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type=radio]+label {
+    color: #fff;
+    display: block;
+    padding: 10px 0;
+    border: 3px solid transparent;
+
+    &:hover {
+        border: 3px solid #17bebb;
+        border-radius: 5px;
+    }
+    
+    &:focus {
+        border: 3px solid #17bebb;
+        border-radius: 5px;
+    }
+}
+
+form input[type=radio]+label::before {
+    content: '';
+    display: inline-block;
+    border: 5px solid #fff;
+    margin: 0 0.5em;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 5px;
+    box-shadow: 4px 4px #007ba0;
+}
+
+form input[type=radio]:checked+label::before {
+    background-color: #17bebb;
+}
+
+input[type=radio]+label {
+    background: 3px solid #17bebb;
+}
+
+// Results section
+.blue {
+    height: 100vh;
+    background: $background;
+}
+.final {
+    padding-top: 50px;
+}
+
+.topButton {
+    padding-top: 20px;
+}
+
+h3 {
+    font-family: 'Vollkorn', serif;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.RW {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+footer p {
+    font-size: 0.5rem;
+}
+
+// Media Queries Width
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+    .button {
+        width: 80%;
+    }
+    fieldset {
+        width: 90%;
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 3.3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2.9rem;
+    }
+    .one {
+        font-size: 1.5rem;
+        padding: 30px 10px;
+    }
+    h2 {
+        padding-top: 75px;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+}
+
+// Media Queries Height
+
+@media (max-height: 625px) {
+    h1 {
+        padding-top: 100px;
+    }
+}
+
+@media (max-height: 590px) {
+    
+   h2 {
+        line-height: 1.5rem;
+    }
+    
+}
+
+@media (max-height: 500px) {
+    h1 {
+        padding-top: 50px;
+    }
+    .one {
+        padding: 15px 10px;
+    }
+
+    h2 {
+        padding-top: 10px;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    input[type=radio]+label {
+        padding: 0;
+    }
+    .final {
+        padding-top: 10px;
+    }
+
+    h3 {
+        padding: 0;
+        line-height: 2rem;
+    }
+}
+
+@media (max-height: 400px) {
+    input[type=submit] {
+        line-height: 1rem;
+    }
+}
