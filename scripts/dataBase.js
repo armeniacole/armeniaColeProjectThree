@@ -1,6 +1,5 @@
 // array of objects with words and definitions as keys.
 randomKiwi.dataBase = [
-
     {
         word: `Togs`,
         definition: `<h3>You wear them swimming!</h3><p>Togs is the collective term for all forms of swim-wear (board shorts, bikinis, one-piece, speedos ect).</p>`,
@@ -85,7 +84,7 @@ randomKiwi.dataBase = [
         word: `Stubbies`,
         definition: `<h3>Short shorts!</h3><p>Stubbies are a pair of very short shorts originally for men. They are similar to a rugby style short and are typically of a sturdy material.</p>`,
         q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">Ticket stub collectors.</label>`,
-        q2: `<input type="radio" name="quest" id="q2" value="True"><label for="q2">Very short shorts.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="true"><label for="q2">Very short shorts.</label>`,
         q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Toes.</label>`
     },
     {
@@ -148,16 +147,71 @@ randomKiwi.dataBase = [
         word: `Durrie`,
         definition: `<h3>A cigarette!</h3><p>Slang for a single cigarette "You got a durrie?".</p>`,
         q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">A trailer.</label>`,
-        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">A cigarette.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="true"><label for="q2">A cigarette.</label>`,
         q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">A type of stew.</label>`
     },
-
+    {
+        word: `Chur`,
+        definition: `<h3>Thanks!</h3><p>An all round positive word that also could mean cool or good.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">A word used in frustration.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">A word used in disgust.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="true"><label for="q3">A word used in appreciation.</label>`
+    },
+    {
+        word: `Gizza`,
+        definition: `<h3>Give us a...!</h3><p>Pass it to me.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1">Asking for something.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">An old lady.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Taking your turn.</label>`
+    },
+    {
+        word: `Grundy's`,
+        definition: `<h3>Underwear!</h3><p>Commonly used in the context of a "Grundy Run" (A high school tradition where boys school students run through a girls school yard in their underwear.).</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">Grandmothers.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="true"><label for="q2">Underwear.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Cow pats.</label>`
+    },
+    {
+        word: `Fortnight`,
+        definition: `<h3>Every two weeks!</h3><p>Every two weeks.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1">Every other week, if something happens regularly it would be "fortnightly".</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">Every two months.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Every four weeks.</label>`
+    },
+    {
+        word: `Mean`,
+        definition: `<h3>Awesome!</h3><p>Used to emphasize something thats good, cool or awesome.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">Intense.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="true"><label for="q2">Awesome.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Average.</label>`
+    },
+    {
+        word: `Hard Case`,
+        definition: `<h3>Someone who is funny!</h3><p>Used to describe someone who is notably funny in particular witty.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">Quiet person.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">Aggressive person.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="true"><label for="q3">Funny person.</label>`
+    },
+    {
+        word: `Dodgy`,
+        definition: `<h3>Something suspicious!</h3><p>Dodgy can be used to describe any thing, activity or person that you are unsure of.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1">Suspicious.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">Dense.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Unreliable.</label>`
+    },
+    {
+        word: `Scroggin`,
+        definition: `<h3>Trail mix!</h3><p>A mix of nuts, dried fruit and chocolate to be eaten while tramping.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">Your head.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="true"><label for="q2">A type of food.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">Alcohol.</label>`
+    },
+    {
+        word: `Scull`,
+        definition: `<h3>To chug a drink!</h3><p>Drinking something in one go usually beer.</p>`,
+        q1: `<input type="radio" name="quest" id="q1" value="true"><label for="q1">To drink quickly.</label>`,
+        q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">Someone considered dumb.</label>`,
+        q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">A pest.</label>`
+    },
 ]
 
-// {
-//     word: `Word`,
-//     definition: `<h3>one liner!</h3><p>definition.</p>`,
-//     q1: `<input type="radio" name="quest" id="q1" value="false"><label for="q1">one.</label>`,
-//     q2: `<input type="radio" name="quest" id="q2" value="false"><label for="q2">two.</label>`,
-//     q3: `<input type="radio" name="quest" id="q3" value="false"><label for="q3">three.</label>`
-// },

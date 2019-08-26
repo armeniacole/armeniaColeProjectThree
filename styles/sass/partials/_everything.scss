@@ -6,6 +6,7 @@ html {
     line-height: 1.5;
 }
 
+// Submit Buttons
 .button {
     width: 60%;
     margin: 0 auto;
@@ -37,6 +38,7 @@ input[type=submit] {
     box-shadow: 10px 10px 0 $lightGreen;  
 }
 
+// Site wide Typography
 p {
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -44,7 +46,7 @@ p {
     margin: 10px;
 }
 
-// Section One - Landing Page
+// Landing Page text styling
 main {
     background: $background;
     height: 100vh;
@@ -83,7 +85,7 @@ h1 {
     padding: 30px;
 }
 
-// Section two
+// Quiz Section
 .green {
     height: 100vh; 
 }
@@ -100,6 +102,7 @@ h2 {
     padding-top: 50px;
 }
 
+// Form styling for quiz
 .quizButton input[type=submit] {
     background: $background;
     box-shadow: 10px 10px 0 $blue;   
@@ -120,6 +123,7 @@ legend {
     margin: 0 auto;
 }
 
+// Radio Button Styling
 form input[type=radio] {
     position: absolute;
     left: -9999px;
@@ -161,7 +165,7 @@ input[type=radio]+label {
     background: 3px solid #17bebb;
 }
 
-// Section three
+// Results section
 .blue {
     height: 100vh;
     background: $background;

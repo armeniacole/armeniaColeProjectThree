@@ -1,12 +1,12 @@
 const randomKiwi = {};
 
 // Function for generating a random number 
-
 randomKiwi.randomItemFromData = function(array) {
     const randomNumber = Math.floor(Math.random() * this.dataBase.length);
     return array[randomNumber];
 }
 
+// userClick must be passed into several functions. Declared as a global variable.
 let userClick = '';
 
 // listen for user event on button click for main button
@@ -16,7 +16,6 @@ randomKiwi.buttonClick = function(){
         
         // generate a random number and use get a index of the array
         userClick = randomKiwi.randomItemFromData(randomKiwi.dataBase);
-
         
         // display matching word and definition to user by adding to html
         $('.results').html(`<h2>${userClick.word}</h2>`);
@@ -46,7 +45,6 @@ randomKiwi.smoothScroll = function (clickedButton) {
                 window.location.hash = "resultsPage";
             });
         }
-
     });
 }
 
@@ -59,10 +57,8 @@ randomKiwi.resetHash = function () {
 randomKiwi.quizClick = function(){
     $('.quiz').on("submit", function(event){
         event.preventDefault();
-        // console.log("is this working");
 
         const userAnswer = $('input[name=quest]:checked').val();
-        // console.log(userAnswer);
 
         if (userAnswer === 'true') {
             $('.final').html(`<p>You were <span class="RW">right</span>, heres the definition:</p><p>${userClick.definition}</p>
@@ -90,10 +86,13 @@ randomKiwi.quizClick = function(){
 
 }
 
-$(function(){
-    // $(window).scrollTop(0);
+randomKiwi.init = function(){
     randomKiwi.resetHash();
     randomKiwi.smoothScroll('.mainButton');
     randomKiwi.buttonClick();
     randomKiwi.quizClick();
+}
+
+$(function(){
+    randomKiwi.init();
 });
